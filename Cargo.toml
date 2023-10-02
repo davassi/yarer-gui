@@ -1,0 +1,14 @@
+[package]
+name = "yarer-gui"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Davassi <gianluigi.davassi@gmail.com>"]
+categories = ["GUI"]
+readme = "README.md"
+
+[dependencies]
+egui = "0.23.0"
+env_logger = "0.10"
+yarer = "0.1.6"
+eframe = "0.23"
