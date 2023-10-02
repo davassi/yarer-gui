@@ -12,3 +12,4 @@ YARER GUI - A very simple gui for Yarer, the rpn expression resolver, made with 
 Yarer Gui is a simple frontend for Yarer, a flexible library, written in Rust, for the processing, compilation and evaluation of mathematical expressions using Reverse Polish Notation.
 
 Screenshots:
+![image](https://github.com/davassi/yarer-gui/assets/1568018/b4b85dbc-31e0-4581-9e58-6b6a1dff70c2)
