@@ -80,31 +80,31 @@ fn main() -> Result<(), eframe::Error> {
             const ORANGE: Color32 = Color32::from_rgb(255, 165, 0);
 
             ui.visuals_mut().override_text_color = Some(Color32::GRAY);
-            let mut sin_text : String = String::from("sin");
+            
+            let sin_b : String = String::from(if state.arc == true { "sin" } else { "asin"});
+            let cos_b : String = String::from(if state.arc == true { "cos" } else { "acos"});
+            let tan_b : String = String::from(if state.arc == true { "tan" } else { "atan"});
 
             let b_inv = butt!("INV");
             let b_abs = butt!("abs");
-            let b_sin = butt!(sin_text);
-            let b_cos = butt!("cos");
-            let b_tan = butt!("tan");
+            let b_sin = butt!(sin_b);
+            let b_cos = butt!(cos_b);
+            let b_tan = butt!(tan_b);
             ui.horizontal(|ui| {
                 if ui.add(b_inv).clicked() {
-                    
-                    //state.expression += "7";
-               //     sin_text.clear();
-                 //   sin_text += "sin-1";
+                    state.arc = !state.arc;
                 }
                 if ui.add(b_abs).clicked() {
                     state.expression += "abs(";
                 }
                 if ui.add(b_sin).clicked() {
-                    state.expression += "sin(";
+                    state.expression += if state.arc == true { "sin(" } else { "asin("};
                 }
                 if ui.add(b_cos).clicked() {
-                    state.expression += "cos(";
+                    state.expression += if state.arc == true { "cos(" } else { "acos("};
                 }
                 if ui.add(b_tan).clicked() {
-                    state.expression += "tan(";
+                    state.expression += if state.arc == true { "tan(" } else { "atan("};
                 }
             });
 
