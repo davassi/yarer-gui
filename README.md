@@ -15,9 +15,20 @@ Screenshots:
 
 ![image](https://github.com/davassi/yarer-gui/assets/1568018/b4b85dbc-31e0-4581-9e58-6b6a1dff70c2)
 
+## Notes
+
+When you start the app, if you notice the error: "XDG Settings Portal did not return response in time: timeout: 100ms, key: color-scheme" or similar,
+
+please try to start the app with setting up the following variable:
+
+```console
+$ WINIT_UNIX_BACKEND="x11" cargo run -q -- 
+```
+
 ## Contribution
 
 Besides being stable, Yarer-GUI is a work in progress. If you have suggestions for features (i.e. more math functions to implement), or if you find any issues in the code, design, interface, etc, please feel free to share them on our [GitHub](https://github.com/davassi/yarer-gui/issues).
 
 I appreciate very much your feedback!
 
+ca

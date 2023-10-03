@@ -1,7 +1,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] // hide console window on Windows in release
 
 use eframe::egui;
-use egui::{Vec2, Rounding, TextEdit, FontId, FontSelection, FontFamily, Separator, Button, Color32};
+use egui::{Vec2, Rounding, TextEdit, FontId, FontSelection, FontFamily, Button, Color32};
 use yarer::session::Session;
 use egui::TextStyle::*;
 
