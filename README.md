@@ -9,7 +9,7 @@ YARER GUI - A simple gui for Yarer
 [![unsafe forbidden](https://img.shields.io/badge/unsafe-forbidden-success.svg)](https://github.com/rust-secure-code/safety-dance/)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-Yarer Gui is a simple frontend for Yarer, a flexible library (https://github.com/davassi/yarer) for the processing, compilation and evaluation of mathematical expressions using Reverse Polish Notation.
+Yarer Gui is a simple frontend for Yarer, a library (https://github.com/davassi/yarer) for the processing, compilation and evaluation of mathematical expressions using Reverse Polish Notation.
 
 Screenshots:
 
@@ -17,7 +17,7 @@ Screenshots:
 
 ## Contribution
 
-Besides being stable, Yarer is a work in progress. If you have suggestions for features (i.e. more math functions to implement), or if you find any issues in the code, design, interface, etc, please feel free to share them on our [GitHub](https://github.com/davassi/yarer-gui/issues).
+Besides being stable, Yarer-GUI is a work in progress. If you have suggestions for features (i.e. more math functions to implement), or if you find any issues in the code, design, interface, etc, please feel free to share them on our [GitHub](https://github.com/davassi/yarer-gui/issues).
 
 I appreciate very much your feedback!
 
