@@ -95,15 +95,19 @@ fn main() -> Result<(), eframe::Error> {
                     state.arc = !state.arc;
                 }
                 if ui.add(b_abs).clicked() {
+                    clear_state(&mut state);
                     state.expression += "abs(";
                 }
                 if ui.add(b_sin).clicked() {
+                    clear_state(&mut state);
                     state.expression += if state.arc == true { "sin(" } else { "asin("};
                 }
                 if ui.add(b_cos).clicked() {
+                    clear_state(&mut state);
                     state.expression += if state.arc == true { "cos(" } else { "acos("};
                 }
                 if ui.add(b_tan).clicked() {
+                    clear_state(&mut state);
                     state.expression += if state.arc == true { "tan(" } else { "atan("};
                 }
             });
@@ -118,15 +122,19 @@ fn main() -> Result<(), eframe::Error> {
                     state.expression += "^";
                 }
                 if ui.add(b_log).clicked() {
+                    clear_state(&mut state);
                     state.expression += "log(";
                 }
                 if ui.add(b_ln).clicked() {
+                    clear_state(&mut state);
                     state.expression += "ln(";
                 }
                 if ui.add(b_open_bracket).clicked() {
+                    clear_state(&mut state);
                     state.expression += "(";
                 }
                 if ui.add(b_close_bracket).clicked() {
+                    clear_state(&mut state);
                     state.expression += ")";
                 }
             
